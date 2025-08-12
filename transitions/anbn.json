@@ -7,7 +7,7 @@
         { "current_state" : "q1", "read" : "b", "next_state" : "q1", "write" : "b", "move" : "R" },
         { "current_state" : "q1", "read" : "_", "next_state" : "q2", "write" : "_", "move" : "L" },
         { "current_state" : "q1", "read" : "y", "next_state" : "q2", "write" : "y", "move" : "L" },
-        { "current_state" : "q2", "read" : "_", "next_state" : "q3", "write" : "y", "move" : "L" },
+        { "current_state" : "q2", "read" : "b", "next_state" : "q3", "write" : "y", "move" : "L" },
         { "current_state" : "q3", "read" : "b", "next_state" : "q3", "write" : "b", "move" : "L" },
         { "current_state" : "q3", "read" : "a", "next_state" : "q3", "write" : "a", "move" : "L" },
         { "current_state" : "q3", "read" : "x", "next_state" : "q0", "write" : "x", "move" : "R" },

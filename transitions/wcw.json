@@ -31,6 +31,6 @@
         { "current_state" : "q8", "read" : "y", "next_state" : "q0", "write" : "y", "move" : "R" },
         { "current_state" : "q9", "read" : "x", "next_state" : "q9", "write" : "x", "move" : "R" },
         { "current_state" : "q9", "read" : "y", "next_state" : "q9", "write" : "y", "move" : "R" },
-        { "current_state" : "q9", "read" : "b", "next_state" : "q10", "write" : "b", "move" : "L" } 
+        { "current_state" : "q9", "read" : "_", "next_state" : "q10", "write" : "_", "move" : "L" } 
     ]
 }

@@ -3,6 +3,7 @@
     "transitions":
     [
         { "current_state" : "q0", "read" : "a", "next_state" : "q1", "write" : "x", "move" : "R" },
+        { "current_state" : "q0", "read" : "x", "next_state" : "q0", "write" : "x", "move" : "R" },
         { "current_state" : "q0", "read" : "b", "next_state" : "q2", "write" : "x", "move" : "R" },
         { "current_state" : "q1", "read" : "a", "next_state" : "q1", "write" : "a", "move" : "R" },
         { "current_state" : "q1", "read" : "x", "next_state" : "q1", "write" : "x", "move" : "R" },
