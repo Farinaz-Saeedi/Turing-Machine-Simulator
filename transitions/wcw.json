@@ -1,0 +1,36 @@
+{
+    "final_states" : ["q10"],
+    "transitions":
+    [
+        { "current_state" : "q0", "read" : "a", "next_state" : "q1", "write" : "x", "move" : "R" },
+        { "current_state" : "q0", "read" : "b", "next_state" : "q5", "write" : "y", "move" : "R" },
+        { "current_state" : "q0", "read" : "c", "next_state" : "q9", "write" : "c", "move" : "R" },
+        { "current_state" : "q1", "read" : "a", "next_state" : "q1", "write" : "a", "move" : "R" },
+        { "current_state" : "q1", "read" : "b", "next_state" : "q1", "write" : "b", "move" : "R" },
+        { "current_state" : "q1", "read" : "c", "next_state" : "q2", "write" : "c", "move" : "R" },
+        { "current_state" : "q2", "read" : "y", "next_state" : "q2", "write" : "y", "move" : "R" },
+        { "current_state" : "q2", "read" : "x", "next_state" : "q2", "write" : "x", "move" : "R" },
+        { "current_state" : "q2", "read" : "a", "next_state" : "q3", "write" : "x", "move" : "L" },
+        { "current_state" : "q3", "read" : "x", "next_state" : "q3", "write" : "x", "move" : "L" },
+        { "current_state" : "q3", "read" : "y", "next_state" : "q3", "write" : "y", "move" : "L" },
+        { "current_state" : "q3", "read" : "c", "next_state" : "q4", "write" : "c", "move" : "L" },
+        { "current_state" : "q4", "read" : "a", "next_state" : "q4", "write" : "a", "move" : "L" },
+        { "current_state" : "q4", "read" : "b", "next_state" : "q4", "write" : "b", "move" : "L" },
+        { "current_state" : "q4", "read" : "x", "next_state" : "q0", "write" : "x", "move" : "R" },
+        { "current_state" : "q5", "read" : "a", "next_state" : "q5", "write" : "a", "move" : "R" },
+        { "current_state" : "q5", "read" : "b", "next_state" : "q5", "write" : "b", "move" : "R" },
+        { "current_state" : "q5", "read" : "c", "next_state" : "q6", "write" : "c", "move" : "R" },
+        { "current_state" : "q6", "read" : "x", "next_state" : "q6", "write" : "x", "move" : "R" },
+        { "current_state" : "q6", "read" : "y", "next_state" : "q6", "write" : "y", "move" : "R" },
+        { "current_state" : "q6", "read" : "b", "next_state" : "q7", "write" : "y", "move" : "L" },
+        { "current_state" : "q7", "read" : "x", "next_state" : "q7", "write" : "x", "move" : "L" },
+        { "current_state" : "q7", "read" : "y", "next_state" : "q7", "write" : "y", "move" : "L" },
+        { "current_state" : "q7", "read" : "c", "next_state" : "q8", "write" : "c", "move" : "L" },
+        { "current_state" : "q8", "read" : "a", "next_state" : "q8", "write" : "a", "move" : "L" },
+        { "current_state" : "q8", "read" : "b", "next_state" : "q8", "write" : "b", "move" : "L" },
+        { "current_state" : "q8", "read" : "y", "next_state" : "q0", "write" : "y", "move" : "R" },
+        { "current_state" : "q9", "read" : "x", "next_state" : "q9", "write" : "x", "move" : "R" },
+        { "current_state" : "q9", "read" : "y", "next_state" : "q9", "write" : "y", "move" : "R" },
+        { "current_state" : "q9", "read" : "b", "next_state" : "q10", "write" : "b", "move" : "L" } 
+    ]
+}
