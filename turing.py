@@ -9,6 +9,9 @@ def machine(file_path, input_str):
     transitions = file_content.get("transitions", [])
     final_states = set(file_content.get("final_states", []))
 
+    final_states_str = " ".join(final_states)
+    print(f"\n\n⚠️  Final State is ({final_states_str})\n\n")
+
     blank = "_"
     tape = [blank] * 10 + list(input_str) + [blank] * 10
     head = 10
@@ -22,10 +25,12 @@ def machine(file_path, input_str):
         current_char = tape[head] if head < len(tape) else blank
         current_tape = "".join(tape).strip(blank)
 
-        print(f"step {step}\nstate {current_state}\ntape {current_tape}\n")
+        print(f"------ step {step}: state -> {current_state} , tape -> {current_tape}\n")
 
         if current_state in final_states:
-            print("ACCEPT...")
+            step += 1
+
+            print(f"\n------ step {step}: state -> {current_state} , ACCEPT ✅\n")
             return True
 
         current_transition = None
@@ -38,7 +43,7 @@ def machine(file_path, input_str):
             current_state = "q_reject"
             step += 1
 
-            print(f"step {step}\nstate {current_state}\nREJECT...")
+            print(f"\n------ step {step}: state -> {current_state} , REJECT ❌\n")
             return False
 
         tape[head] = current_transition["write"]
