@@ -29,4 +29,4 @@ def getInput():
     input_str = input("Enter Your Language: ").strip().lower()
 
     file_path = pt(__file__).resolve().parent / "transitions" / languages[choice]
-    return {"file_path": str(file_path), "language": input_str}
+    return {"file_path": str(file_path), "input_str": input_str}
