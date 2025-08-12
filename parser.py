@@ -26,8 +26,7 @@ def getInput():
             break
         print("ERROR: Invalid input; Please Enter a Number Between 1 and 4")
 
-    language = input("Enter Your Language: ").strip().lower()
+    input_str = input("Enter Your Language: ").strip().lower()
 
-    path = pt(__file__).resolve().parent / "transitions" / languages[choice]
-    
-    return {"path": str(path), "language": language}
+    file_path = pt(__file__).resolve().parent / "transitions" / languages[choice]
+    return {"file_path": str(file_path), "language": input_str}
