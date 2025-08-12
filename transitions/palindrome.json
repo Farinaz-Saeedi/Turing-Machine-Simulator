@@ -1,0 +1,26 @@
+{
+    "final_states" : ["q8"],
+    "transitions":
+    [
+        { "current_state" : "q0", "read" : "a", "next_state" : "q1", "write" : "_", "move" : "R" },
+        { "current_state" : "q0", "read" : "b", "next_state" : "q2", "write" : "_", "move" : "R" },
+        { "current_state" : "q0", "read" : "_", "next_state" : "q8", "write" : "_", "move" : "N" },
+        { "current_state" : "q1", "read" : "_", "next_state" : "q8", "write" : "_", "move" : "N" },
+        { "current_state" : "q2", "read" : "_", "next_state" : "q8", "write" : "_", "move" : "N" },
+        { "current_state" : "q1", "read" : "b", "next_state" : "q3", "write" : "b", "move" : "R" },
+        { "current_state" : "q1", "read" : "a", "next_state" : "q3", "write" : "a", "move" : "R" },
+        { "current_state" : "q3", "read" : "a", "next_state" : "q3", "write" : "a", "move" : "R" },
+        { "current_state" : "q3", "read" : "b", "next_state" : "q3", "write" : "b", "move" : "R" },
+        { "current_state" : "q3", "read" : "_", "next_state" : "q5", "write" : "_", "move" : "L" },
+        { "current_state" : "q5", "read" : "a", "next_state" : "q7", "write" : "_", "move" : "L" },
+        { "current_state" : "q7", "read" : "a", "next_state" : "q7", "write" : "a", "move" : "L" },
+        { "current_state" : "q7", "read" : "b", "next_state" : "q7", "write" : "b", "move" : "L" },
+        { "current_state" : "q7", "read" : "_", "next_state" : "q0", "write" : "_", "move" : "R" },
+        { "current_state" : "q2", "read" : "a", "next_state" : "q4", "write" : "a", "move" : "R" },
+        { "current_state" : "q2", "read" : "b", "next_state" : "q4", "write" : "b", "move" : "R" },
+        { "current_state" : "q4", "read" : "a", "next_state" : "q4", "write" : "a", "move" : "R" },
+        { "current_state" : "q4", "read" : "b", "next_state" : "q4", "write" : "b", "move" : "R" },
+        { "current_state" : "q4", "read" : "_", "next_state" : "q6", "write" : "_", "move" : "L" },
+        { "current_state" : "q6", "read" : "b", "next_state" : "q7", "write" : "_", "move" : "L" }    
+    ]
+}
