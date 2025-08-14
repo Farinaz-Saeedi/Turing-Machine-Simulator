@@ -21,7 +21,10 @@ def getInput():
     print("------------------------------------------------\n")
 
     while True:
-        choice = input("Enter Your Choice: ").strip()
+        
+        choice = input("Enter Your Choice (or q to quit): ").strip()
+        if choice == "q":
+            return {"file_path": None, "input_str": "q"}
         if choice in languages:
             break
         print("ERROR: Invalid input; Please Enter a Number Between 1 and 4\n")
